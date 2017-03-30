@@ -1,0 +1,28 @@
+﻿@model IEnumerable<SignalRWithSqlDependency.Data.Blog>
+@{
+    Layout = null;
+    ViewBag.Title = "GetBlog";
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Label)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BlogContain)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Label)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BlogContain)
+        </td>
+    </tr>
+}
+
+</table>

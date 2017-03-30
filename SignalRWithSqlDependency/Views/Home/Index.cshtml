@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="messageTable"></div>
+    </div>
+</div>
+@section scripts{ 
+<script src="~/Scripts/jquery.signalR-2.2.1.js"></script>
+<script src="/signalr/hubs"></script>
+<script src="~/Scripts/home.js"></script>
+}
